@@ -1,0 +1,40 @@
+#sidebar {
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    width: 16rem;
+    height: 100vh;
+    background-color: #e11d48;
+    color: white;
+    z-index: 40;
+}
+
+.sidebar-open #sidebar {
+    transform: translateX(0);
+}
+
+.sidebar-closed #sidebar {
+    transform: translateX(-100%);
+}
+
+@media (min-width: 768px) {
+    main {
+        transition: margin-left 0.3s ease-in-out;
+        margin-left: 0;
+    }
+
+    .sidebar-open main {
+        margin-left: 16rem;
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        margin-left: 0;
+    }
+
+    .sidebar-open main {
+        margin-left: 16rem;
+    }
+}
