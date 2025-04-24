@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
 </head>
+
 <body class="bg-gray-100 min-h-screen sidebar-open" id="app">
 
     <!-- Navbar -->
@@ -36,8 +38,6 @@
             <h2 class="text-2xl font-bold mb-6">Telkomsel</h2>
             <nav class="space-y-4">
                 <a href="/dashboard" class="block py-2 px-4 rounded hover:bg-red-600">Dashboard</a>
-                <a href="/events" class="block py-2 px-4 rounded hover:bg-red-600">Data Event</a>
-                <a href="/upload" class="block py-2 px-4 rounded hover:bg-red-600">Upload Report</a>
                 <a href="/logout" class="block py-2 px-4 rounded hover:bg-red-600">Logout</a>
             </nav>
         </aside>
@@ -50,5 +50,8 @@
 
     <!-- Custom JS -->
     <script src="{{ asset('js/sidebar.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    @yield('scripts')
 </body>
+
 </html>

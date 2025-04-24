@@ -14,11 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return redirect('/login');
+});
 
+// Hapus salah satu /login, cukup satu aja
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
+Route::middleware('session.auth')->group(function () {
+    Route::get('/dashboard', [AuthController::class, 'dashboard']);
+    Route::get('/logout', [AuthController::class, 'logout']);
 });

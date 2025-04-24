@@ -8,6 +8,10 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
+    public function showLoginForm()
+    {
+        return view('login');
+    }
     public function login(Request $request)
     {
         // Validasi input sederhana
