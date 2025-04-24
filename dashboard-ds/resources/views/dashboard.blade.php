@@ -1,24 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- dashboard.html -->
+@extends('layouts.master')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
-    </script>
-</head>
-<nav class="navbar fixed-top bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="{{ url('/dashboard') }}">Dashboard Telkomsel</a>
+@section('content')
+    <div class="mb-6">
+        <h1 class="text-3xl font-bold text-gray-800">Dashboard</h1>
+        <p class="text-gray-600">Selamat datang, Admin!</p>
     </div>
-</nav>
 
-<body>
-</body>
-
-</html>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow">
+            <h2 class="text-xl font-semibold">Total Event</h2>
+            <p class="text-3xl font-bold text-red-700 mt-2">15</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+            <h2 class="text-xl font-semibold">Sales Aktif</h2>
+            <p class="text-3xl font-bold text-red-700 mt-2">5</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+            <h2 class="text-xl font-semibold">Event Bulan Ini</h2>
+            <p class="text-3xl font-bold text-red-700 mt-2">4</p>
+        </div>
+    </div>
+@endsection
