@@ -13,6 +13,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/grafik.css') }}"> --}}
 </head>
 
 <body class="bg-gray-100 min-h-screen sidebar-open" id="app">
@@ -38,6 +39,9 @@
             <h2 class="text-2xl font-bold mb-6">Telkomsel</h2>
             <nav class="space-y-4">
                 <a href="/dashboard" class="block py-2 px-4 rounded hover:bg-red-600">Dashboard</a>
+                <a href="/sbs" class="block py-2 px-4 rounded hover:bg-red-600">DS Digipos SBS</a>
+                <a href="/sbt" class="block py-2 px-4 rounded hover:bg-red-600">DS Digipos SBT</a>
+                <a href="/sbu" class="block py-2 px-4 rounded hover:bg-red-600">DS Digipos SBU</a>
                 <a href="/logout" class="block py-2 px-4 rounded hover:bg-red-600">Logout</a>
             </nav>
         </aside>
@@ -51,6 +55,7 @@
     <!-- Custom JS -->
     <script src="{{ asset('js/sidebar.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     @yield('scripts')
 </body>
 

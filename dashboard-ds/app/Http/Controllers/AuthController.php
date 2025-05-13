@@ -33,7 +33,7 @@ class AuthController extends Controller
         //     return response()->json(['success' => false, 'message' => 'Akun belum disetujui admin'], 403);
         // }
 
-        // Mengirimkan response Login berhasil
+        //Mengirimkan response Login berhasil
         // return response()->json([
         //     'success' => true,
         //     'message' => 'Login berhasil',

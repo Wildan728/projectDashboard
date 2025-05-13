@@ -1,0 +1,79 @@
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f7f7f7;
+}
+
+.card-telkomsel {
+    border: 1px solid #e11d2a;
+    border-radius: 14px;
+    background: #fff;
+}
+
+.card-header-telkomsel {
+    background: #e11d2a;
+    color: #fff;
+    border-radius: 14px 14px 0 0;
+    padding: 0.75rem 1.25rem;
+}
+
+.table-dashboard thead th {
+    background: #e11d2a;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+
+.table-dashboard tbody tr {
+    background: #fff;
+    border-radius: 8px;
+}
+
+.table-dashboard td,
+.table-dashboard th {
+    vertical-align: middle;
+    font-size: 0.95rem;
+}
+
+.table-separator td {
+    background-color: #fbeaec;
+    color: #b91c1c;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border-top: 2px solid #e11d2a;
+    letter-spacing: 0.05em;
+}
+
+.text-telkomsel {
+    color: #e11d2a !important;
+}
+
+.bg-telkomsel-light {
+    background: #fbeaec !important;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .card-header-telkomsel {
+        font-size: 1rem;
+    }
+
+    .table-dashboard th,
+    .table-dashboard td {
+        font-size: 0.85rem;
+    }
+
+    .revenue-col {
+        transition: all 0.3s ease;
+    }
+
+    .toggle-revenue {
+        cursor: pointer;
+        color: #007bff;
+        text-decoration: underline;
+    }
+
+}
