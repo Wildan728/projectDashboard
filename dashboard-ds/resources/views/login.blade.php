@@ -19,8 +19,9 @@
         <!-- Left side: Info with solid red background -->
         <div class="w-1/2 bg-red-600 text-white p-10 flex flex-col justify-center hidden md:flex">
             <h2 class="text-3xl font-bold mb-4">Selamat Datang Admin</h2>
-            <p class="text-lg text-gray-100 drop-shadow-lg">Silakan login untuk mengakses dashboard Telkomsel Sales
-                Event.</p>
+            <p class="text-lg text-gray-100 drop-shadow-lg">Silakan login untuk mengakses dashboard Direct
+                Sales Telkomsel.
+            </p>
         </div>
 
         <!-- Right side: Login form -->

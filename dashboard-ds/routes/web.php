@@ -1,6 +1,11 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ResumeController;
+use App\Http\Controllers\SbsController;
+use App\Http\Controllers\SbtController;
+use App\Http\Controllers\SbuController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,6 +28,10 @@ Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 
 Route::middleware('session.auth')->group(function () {
-    Route::get('/dashboard', [AuthController::class, 'dashboard']);
+    // Route::get('/dashboard', [AuthController::class, 'dashboard']);
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/sbs', [SbsController::class, 'index']);
+    Route::get('/sbt', [SbtController::class, 'index']);
+    Route::get('/sbu', [SbuController::class, 'index']);
     Route::get('/logout', [AuthController::class, 'logout']);
 });
